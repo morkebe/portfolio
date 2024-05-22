@@ -1,35 +1,87 @@
 import React from 'react';
-import './Hero.css'; // Assurez-vous que ce fichier existe et est configuré pour utiliser Tailwind CSS
+import { motion } from 'framer-motion';
+import './Hero.css';
 
 const Hero = () => {
   return (
     <section id="home" className="h-screen flex flex-col md:flex-row">
       {/* Section de gauche */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center p-4">
-        <div className="flex flex-col items-center space-y-6">
-       
-          <h1 className="text-5xl font-bold mb-2">Hello, I'm MOR KHOUDIA KEBE</h1>
-          <div className="text-2xl">
+      <motion.div 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="w-full md:w-1/2 flex flex-col justify-center items-center text-center p-4"
+      >
+        <motion.div 
+          initial={{ scale: 0.8 }} 
+          animate={{ scale: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col items-center space-y-6"
+        >
+          <motion.h1 
+            initial={{ y: -50 }} 
+            animate={{ y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-5xl font-bold mb-2"
+          >
+            Hello, I'm MOR KHOUDIA KEBE
+          </motion.h1>
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="text-2xl"
+          >
             <p className="animated-text">Développeur Full-Stack web et mobile</p>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
       {/* Section de droite */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center p-4">
-        <div className="max-w-md mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Bienvenue sur mon portfolio!</h2>
-          <p className="text-lg leading-relaxed">
+      <motion.div 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="w-full md:w-1/2 flex flex-col justify-center items-center text-center p-4"
+      >
+        <motion.div 
+          initial={{ maxW: 'md', mx: 'auto' }} 
+          animate={{ maxW: 'md', mx: 'auto' }}
+          transition={{ duration: 1 }}
+          className="max-w-md mx-auto"
+        >
+          <motion.h2 
+            initial={{ y: -50 }} 
+            animate={{ y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-3xl font-bold mb-4"
+          >
+            Bienvenue sur mon portfolio!
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="text-lg leading-relaxed"
+          >
             Passionné par le développement Web mobile et full stack, je propose des expériences utilisateur fluides et réactives sur divers appareils. <br/> Découvrez mes projets et contactez-moi pour discuter de vos projets web mobiles.
-          </p> <br/>
-          <a
+          </motion.p> <br/>
+          <motion.a
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             href="/cv.pdf"
             download
             className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
           >
             Télécharger mon CV
-          </a><br/><br/>
-          <div className="flex justify-center items-center text-center p-4">
-          <a href='https://github.com/' class="p-4">
+          </motion.a><br/><br/>
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center items-center text-center p-4"
+          >
+                     <a href='https://github.com/' class="p-4">
             <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#333] p-4">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                 <path
@@ -67,9 +119,9 @@ const Hero = () => {
             </svg>
             </span>
             </a>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
