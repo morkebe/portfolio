@@ -1,6 +1,5 @@
 // src/App.js
 import React from 'react';
-import './index.css';  // Import the CSS file
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,7 +10,14 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="background">
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: "url('/bg.jpg')", // Chemin relatif à partir du répertoire public
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}
+    >
       <Navbar />
       <Hero />
       <About />
