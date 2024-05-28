@@ -12,9 +12,35 @@
   
   .animated-text {
     display: inline-block;
-    white-space: nowrap;
     overflow: hidden;
-    border-right: 0.15em solid white;
-    animation: typing 4.5s steps(40, end), blink-caret 1.75s step-end infinite;
+    animation: change-colors 10s infinite, move-text 10s infinite;
   }
+  
+  @keyframes change-colors {
+    0% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: yellow;
+    }
+    100% {
+      color: red;
+    }
+  }
+  
+  @keyframes move-text {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
   

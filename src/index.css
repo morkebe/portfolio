@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.background {
+  background-image: url('C:/Users/bmd-tech/Desktop/my-portfolio/public/bg.avif');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}

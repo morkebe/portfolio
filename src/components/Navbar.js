@@ -13,7 +13,7 @@ const Navbar = () => {
     
     <nav className=" p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className=" font-bold text-xl">Mor Khoudia Kebe</div>
+        <div className=" font-bold text-white text-xl">Mor Khoudia Kebe</div>
       
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-gray-700 hover:text-white focus:outline-none">
