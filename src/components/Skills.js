@@ -22,19 +22,19 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl text-center text-white py-8 font-bold mb-8">Skills</h2>
+        <h2 className="text-5xl font-black text-blue-900 dark:text-white text-center py-6">Skills</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              className="flex flex-col items-center justify-center p-4 border border-gray-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.5, delay: index * 0.3 }}
+              whileHover={{ scale: 1.2 }}
             >
               <img src={skill.logo} alt={skill.name} className="w-16 h-16 mb-4" />
-              <h3 className="text-lg font-semibold text-white dark:text-white">{skill.name}</h3>
+              <h3 className="text-lg font-semibold  dark:text-white">{skill.name}</h3>
             </motion.div>
           ))}
         </div>

@@ -10,14 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div
-      className="min-h-screen"
-      style={{
-        backgroundImage: "url('/bg.jpg')", // Chemin relatif à partir du répertoire public
-        backgroundSize: "cover",
-        backgroundPosition: "center"
-      }}
-    >
+    <div>
       <Navbar />
       <Hero />
       <About />

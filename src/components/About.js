@@ -8,7 +8,7 @@ const About = () => {
         initial={{ opacity: 1, y: -50 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 8 }}
-        className="text-3xl text-center text-white font-bold mb-4 p-9"
+        className="text-5xl font-black text-blue-900 dark:text-white text-center py-6"
       >
         À propos de moi
       </motion.h2>
@@ -33,7 +33,7 @@ const About = () => {
           transition={{ duration: 8 }}
           className="lg:w-1/2 mt-6 lg:mt-0"
         >
-          <p className="text-2xl text-white leading-relaxed">
+          <p className="text-2xl  leading-relaxed">
             Développeur Full Stack Web et Mobile avec une solide expérience en développement front-end et back-end. Passionné par l'IA et la création d'applications innovantes. Engagé dans la promotion de l'environnement durable.
           </p>
         </motion.div>

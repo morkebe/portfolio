@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <section id="home" className="h-screen text-white flex flex-col md:flex-row">
+    <section id="home" className="h-screen flex flex-col md:flex-row">
       {/* Section de gauche */}
       <motion.div 
         initial={{ opacity: 0 }} 
@@ -22,7 +22,7 @@ const Hero = () => {
             initial={{ y: -50 }} 
             animate={{ y: 0 }}
             transition={{ duration: 8 }}
-            className="text-5xl font-bold mb-2"
+            className="text-5xl font-black text-blue-900 dark:text-white"
           >
             Bonjour, je m'appelle MOR KHOUDIA KEBE
           </motion.h1>
@@ -32,7 +32,7 @@ const Hero = () => {
             transition={{ duration: 8 }}
             className="text-2xl"
           >
-            <p className="animated-text">Développeur Full-Stack web et mobile</p>
+            <p className="animated-text text-3xl fond-blod">Développeur Full-Stack web et mobile</p>
           </motion.div>
         </motion.div>
       </motion.div>
@@ -63,15 +63,14 @@ const Hero = () => {
             transition={{ duration: 8 }}
             className="text-lg leading-relaxed"
           >
-            Passionné par le développement Web mobile et full stack, je propose des expériences utilisateur fluides et réactives sur divers appareils. <br/> Découvrez mes projets et contactez-moi pour discuter de vos projets web mobiles.
-          </motion.p> <br/>
+           Je suis passionné par le développement web et mobile, avec une expertise diversifiée allant des applications personnelles aux solutions d'entreprise. Mon objectif est de fournir des expériences utilisateur fluides et réactives sur diverses plateformes. <br/>Explorez mes réalisations et contactez-moi pour discuter de vos projets de développement web et mobile.   </motion.p> <br/>
           <motion.a
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }}
             transition={{ duration: 4 }}
             href="/cv.pdf"
             download
-            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
+            className="mt-4 px-4 py-2 bg-blue-600  rounded hover:bg-blue-700 transition duration-300"
           >
             Télécharger mon CV
           </motion.a><br/><br/>
@@ -81,7 +80,7 @@ const Hero = () => {
             transition={{ duration: 4 }}
             className="flex justify-center items-center  text-center p-4"
           >
-                     <a href='https://github.com/' class="p-4">
+                     <a href='https://github.com/' class="p-4 ">
             <span class="[&>svg]:h-7 [&>svg]:w-7  p-4">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                 <path

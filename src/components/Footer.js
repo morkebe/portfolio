@@ -6,7 +6,7 @@ const Footer = () => {
   const whatsappNumber = '+221771095383'; // Replace with your WhatsApp number
 
   return (
-    <footer className="text-white py-8">
+    <footer className=" py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">

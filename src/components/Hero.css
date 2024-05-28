@@ -13,24 +13,24 @@
   .animated-text {
     display: inline-block;
     overflow: hidden;
-    animation: change-colors 10s infinite, move-text 10s infinite;
+    animation: change-colors 10s infinite, move-text 20s infinite;
   }
   
   @keyframes change-colors {
     0% {
-      color: red;
+      color: rgb(117, 31, 31);
     }
     25% {
-      color: blue;
+      color: rgb(55, 55, 132);
     }
     50% {
-      color: green;
+      color: rgb(74, 137, 74);
     }
     75% {
-      color: yellow;
+      color: rgb(129, 129, 52);
     }
     100% {
-      color: red;
+      color: rgb(151, 2, 2);
     }
   }
   

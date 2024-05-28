@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 const Contact = () => {
   return (
     <div>
-    <h1 class="text-4xl text-center text-white font-bold mb-8 py-8">Contacts</h1>
-    <div className="grid md:grid-cols-2 items-center overflow-hidden shadow-lg rounded-3xl max-w-6xl mx-auto text-white my-6 font-sans">
+    <h1 class="text-5xl font-black text-blue-900 dark:text-white text-center py-6">Contacts</h1>
+    <div className="grid md:grid-cols-2   items-center overflow-hidden shadow-lg rounded-3xl max-w-6xl mx-auto  my-6 font-sans">
      
      
-      <div className="flex flex-col bg-black-500 space-y-6 p-10 sm:p-10 max-sm:px-4 max-sm:py-8">
+      <div className="flex flex-col bg-black-500  space-y-6 p-10 sm:p-10 max-sm:px-4 max-sm:py-8">
         <motion.div
-          className=" p-6 rounded-lg shadow-md flex items-center"
+          className="border border-gray-800  p-6 rounded-lg shadow-md flex items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -20,10 +20,10 @@ const Contact = () => {
   <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
 </svg>
 
-          <p className=" font-medium text-lg px-8">info@example.com</p>
+          <p className="  font-medium text-lg px-8">info@example.com</p>
         </motion.div>
         <motion.div
-          className=" p-6 rounded-lg shadow-md flex items-center"
+          className="border border-gray-800  p-6 rounded-lg shadow-md flex items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -35,7 +35,7 @@ const Contact = () => {
           <p className=" font-medium text-lg px-8">+221 77 109 53 83</p>
         </motion.div>
         <motion.div
-          className=" p-6 rounded-lg shadow-md flex items-center"
+          className="border border-gray-800  p-6 rounded-lg shadow-md flex items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
