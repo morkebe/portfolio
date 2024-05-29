@@ -6,8 +6,8 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 ">
       <div className=" container mx-auto px-4">
-        <h2 className="text-5xl font-black text-blue-900 dark:text-white text-center py-6">Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 className="text-5xl font-black text-blue-900 dark:text-white text-center py-9">Projects</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-9 gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={index}

@@ -15,13 +15,13 @@ const Hero = () => {
         <motion.div 
           initial={{ scale: 0.8 }} 
           animate={{ scale: 1 }}
-          transition={{ duration: 8 }}
+          transition={{ duration: 2 }}
           className="flex flex-col items-center space-y-6"
         >
           <motion.h1 
             initial={{ y: -50 }} 
             animate={{ y: 0 }}
-            transition={{ duration: 8 }}
+            transition={{ duration: 2 }}
             className="text-5xl font-black text-blue-900 dark:text-white"
           >
             Bonjour, je m'appelle MOR KHOUDIA KEBE
@@ -29,7 +29,7 @@ const Hero = () => {
           <motion.div 
             initial={{ opacity: 1 }} 
             animate={{ opacity: 1 }}
-            transition={{ duration: 8 }}
+            transition={{ duration: 2 }}
             className="text-2xl"
           >
             <p className="animated-text text-3xl fond-blod">Développeur Full-Stack web et mobile</p>
@@ -40,7 +40,7 @@ const Hero = () => {
       <motion.div 
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }}
-        transition={{ duration: 8 }}
+        transition={{ duration: 2 }}
         className="w-full md:w-1/2 flex flex-col justify-center items-center text-center p-4"
       >
         <motion.div 
@@ -52,7 +52,7 @@ const Hero = () => {
           <motion.h2 
             initial={{ y: -50 }} 
             animate={{ y: 0 }}
-            transition={{ duration: 8 }}
+            transition={{ duration: 2 }}
             className="text-3xl font-bold mb-4"
           >
             Bienvenue sur mon portfolio!
@@ -60,25 +60,25 @@ const Hero = () => {
           <motion.p 
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }}
-            transition={{ duration: 8 }}
+            transition={{ duration: 2 }}
             className="text-lg leading-relaxed"
           >
            Je suis passionné par le développement web et mobile, avec une expertise diversifiée allant des applications personnelles aux solutions d'entreprise. Mon objectif est de fournir des expériences utilisateur fluides et réactives sur diverses plateformes. <br/>Explorez mes réalisations et contactez-moi pour discuter de vos projets de développement web et mobile.   </motion.p> <br/>
-          <motion.a
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }}
-            transition={{ duration: 4 }}
-            href="/cv.pdf"
-            download
-            className="mt-4 px-4 py-2 bg-blue-600  rounded hover:bg-blue-700 transition duration-300"
-          >
-            Télécharger mon CV
-          </motion.a><br/><br/>
+           <motion.a
+  initial={{ opacity: 0 }} 
+  animate={{ opacity: 1 }}
+  transition={{ duration: 2 }}
+  href="/cv.pdf"
+  download
+  className="mt-4 px-4 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300"
+>
+  <i className="fas fa-file-download mr-2" /> Télécharger mon CV
+</motion.a><br/><br/>
           <motion.div 
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }}
-            transition={{ duration: 4 }}
-            className="flex justify-center items-center  text-center p-4"
+            transition={{ duration: 2 }}
+            className="flex justify-center items-center  text-center p-4 py-9"
           >
                      <a href='https://github.com/' class="p-4 ">
             <span class="[&>svg]:h-7 [&>svg]:w-7  p-4">

@@ -13,7 +13,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <About />
+      <div class="py-5"><About /></div>
+      
       <Skills />
       <Projects />
       <Contact />
