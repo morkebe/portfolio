@@ -68,7 +68,7 @@ const Hero = () => {
   initial={{ opacity: 0 }} 
   animate={{ opacity: 1 }}
   transition={{ duration: 2 }}
-  href="/cv.pdf"
+  href="/Professional_CV.pdf"
   download
   className="mt-4 px-4 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300"
 >
